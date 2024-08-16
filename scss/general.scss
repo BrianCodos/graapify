@@ -14,6 +14,11 @@ body{
     padding: 0;
     margin: 0;
 }
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 header{
     margin: 0;
 }
@@ -34,5 +39,11 @@ header{
 
 .hover-effect:hover {
     box-shadow: 0 1px 70px #8df186a9;
-    transform: scale(1.01); /* Aumenta ligeramente el tamaño cuando se hace hover */
+    transform: scale(1.06); /* Aumenta ligeramente el tamaño cuando se hace hover */
+
+}
+// navbar
+.nav_bar_flotante{
+    width: 100%;
+    position: absolute;
 }

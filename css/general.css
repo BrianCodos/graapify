@@ -30,6 +30,12 @@ body {
   margin: 0;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 header {
   margin: 0;
 }
@@ -50,7 +56,12 @@ header {
 
 .hover-effect:hover {
   box-shadow: 0 1px 70px rgba(141, 241, 134, 0.662745098);
-  transform: scale(1.01); /* Aumenta ligeramente el tamaño cuando se hace hover */
+  transform: scale(1.06); /* Aumenta ligeramente el tamaño cuando se hace hover */
+}
+
+.nav_bar_flotante {
+  width: 100%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=general.css.map */
