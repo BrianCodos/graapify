@@ -1,0 +1,69 @@
+@use '../colors.scss' as *; 
+
+.bg-primary {
+    background-color: $primary;
+  }
+  
+  .bg-dark-blue {
+    background-color: $dark-blue;
+  }
+  
+  .bg-light-blue {
+    background-color: $light-blue;
+  }
+  
+  .bg-white {
+    background-color: $white;
+  }
+  
+  .bg-black {
+    background-color: $black;
+  }
+// 
+.bg-gradient-primary{
+  background-image: linear-gradient(to top, $primary 10%, $light-blue 90%);
+  // background: $light-blue;
+  // background: radial-gradient(circle, $primary 0%, $light-blue 100%);
+  background-position: 20% 80%;
+  background-size: 100% 100%;
+}
+.bg-gradient-dark{
+  background-image: linear-gradient(to top, $primary 10%, #2c4c64 80%);
+  // background: $light-blue;
+  // background: radial-gradient(circle, $primary 0%, $light-blue 100%);
+  background-position: 20% 80%;
+  background-size: 100% 100%;
+}
+// 
+  /* Contenedor para el efecto de desenfoque */
+.bg-blur {
+  position: relative;
+  /* Esto es necesario para que el efecto de desenfoque funcione correctamente */
+  overflow: hidden;
+}
+
+/* Elemento con fondo transparente y desenfoque */
+.bg-blur::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($dark-blue, 0.555); /* Color blanco con 30% de opacidad */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  z-index: 0; /* Asegura que el efecto de desenfoque esté detrás del contenido */
+}
+.bg-blur-content {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté por encima del fondo con desenfoque */
+}
+.bg-stars{
+  height: 500px; /* Altura del contenedor */
+            background-image: url('../../statics/img/estrellas.png'); /* Reemplaza con la ruta de tu imagen */
+            background-repeat: repeat-y; /* Repetir solo verticalmente */
+            background-size: 100% auto; /* Ancho 100%, altura automática */
+            background-position: top center; /* Alinea la imagen en el centro superior */
+            background-attachment: fixed; /* Hace que la imagen se quede fija al hacer scroll */
+
+}

@@ -1,0 +1,54 @@
+@use '../colors.scss' as *; 
+.btn-primary{
+    // background: $light-blue;
+    background: radial-gradient(circle, $primary-light 20%, $primary 80%);
+    background-position: top bottom;
+    background-size: 100% 1%;
+    border: none;
+    color: $dark-blue;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    // width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    
+    
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(00deg, rgba(255, 255, 255, 0.644) 0%, rgba(243, 243, 233, 0) 50%, rgba(255, 255, 255, 0) 100%);
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    &:hover{
+        background: radial-gradient(circle, $primary-light 80%, $primary 80%);
+        box-shadow: 0 1px 20px #8df186;
+        padding: 10px 35px;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(00deg, rgba(255, 255, 255, 0.356) 0%, rgba(243, 243, 233, 0) 50%, rgba(255, 255, 255, 0) 100%);
+            z-index: 1000;
+        }
+    }
+    
+}

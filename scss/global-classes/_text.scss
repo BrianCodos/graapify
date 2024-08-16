@@ -1,0 +1,45 @@
+@use 'globalVariables.scss' as *;
+// 
+.title{
+    font-size: $rem*1.2;
+    font-weight: 600;
+    line-height: $rem*1.5;
+}
+
+// heading
+
+h1{
+    font-size: $rem*3;
+    line-height: $rem*3;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: $rem*2;
+    line-height: $rem*2.3;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-size: $rem*1;
+    line-height: $rem*1.7;
+    margin: 0;
+    padding: 0;
+
+}
+.disclaimer{
+    font-size: $rem*.9;
+}
+// justufuicauib
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}

@@ -1,0 +1,23 @@
+/* Estilo base para inputs */
+input {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d1d5db; /* Color de borde en Tailwind por defecto */
+    border-radius: 0.375rem; /* border-radius: 6px; (aproximadamente) */
+    padding: 0.75rem; /* padding: 12px; */
+    font-size: 1rem; /* font-size: 16px; */
+    color: #2d3748; /* text color en Tailwind por defecto */
+    background-color: #ffffff; /* Background en Tailwind por defecto */
+    transition: border-color 0.2s, box-shadow 0.2s; /* Transición para enfoque */
+}
+
+/* Estilo para inputs en estado de enfoque (focus) */
+input:focus {
+    outline: none;
+    border-color: #3182ce; /* Color de borde en enfoque */
+    box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2); /* Sombra de enfoque */
+}
+
+label{
+    padding: 5px 0;
+}

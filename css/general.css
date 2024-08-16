@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Lexend+Deca:wght@100..900&display=swap");
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+.dark-blue {
+  color: #1D303F;
+}
+
+.Light-blue {
+  color: #477BA4;
+}
+
+.primary {
+  color: #8EF186;
+}
+
+body {
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #1D303F;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  margin: 0;
+}
+
+.icon_img {
+  font-size: 17px;
+  font-weight: 600;
+}
+.icon_img img {
+  width: 50px;
+  height: 50px;
+}
+
+.hover-effect {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hover-effect:hover {
+  box-shadow: 0 1px 70px rgba(141, 241, 134, 0.662745098);
+  transform: scale(1.01); /* Aumenta ligeramente el tamaño cuando se hace hover */
+}
+
+/*# sourceMappingURL=general.css.map */

@@ -1,0 +1,43 @@
+// Mixin para generar clases de gap
+@mixin generate-gap-classes($gaps) {
+    @each $gap, $value in $gaps {
+      .g-#{$gap} {
+        --column-gap: #{$value};
+        gap: var(--column-gap);
+      }
+    }
+  }
+  
+  // Definir los tamaños de gap
+  $gaps: (
+    1: 0.5rem,
+    2: 1rem,
+    3: 1.5rem,
+    4: 2rem,
+    5: 2.5rem,
+    6: 3rem
+  );
+  
+  // Generar las clases de gap
+  @include generate-gap-classes($gaps);
+  
+  // Mixin para columnas flexibles
+  @mixin flex-columns($columns) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--column-gap, 1rem); // Utiliza la variable de gap si está definida, de lo contrario usa 1rem
+  
+    & > * {
+      flex: 0 1 calc((100% - (var(--column-gap, 1rem) * (#{$columns} - 1))) / #{$columns});
+      box-sizing: border-box;
+    }
+  }
+  
+  // Generar clases de columna para 1 a 12 columnas
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      @include flex-columns($i);
+    }
+  }
+  
+  

@@ -1,0 +1,21 @@
+@use 'colors.scss' as *;
+@use 'general.scss' as *;
+@use 'global-classes/globalVariables.scss' as *;
+@use 'global-classes/text' as *;
+@use 'global-classes/Cols' as *;
+@use 'global-classes/margin.scss' as *;
+@use 'global-classes/padding.scss' as *;
+@use 'global-classes/backgrounds.scss' as *;
+@use 'global-classes/border.scss' as *; 
+@use 'global-classes/flexbox.scss' as *; 
+@use 'global-classes/GridLayout.scss' as *; 
+@use 'global-classes/shadow.scss' as *; 
+@use 'global-classes/opacity.scss' as *; 
+@use 'global-classes/containers.scss' as *; 
+@use 'global-classes/inputs.scss' as *; 
+@use 'global-classes/buttons.scss' as *; 
+
+.logo img{
+    max-width: 250px;
+    margin-bottom: $rem*4;
+}

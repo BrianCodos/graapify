@@ -1,0 +1,38 @@
+@use 'colors.scss' as *;
+@use 'global-classes/globalVariables.scss' as *;
+// 
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=Lexend+Deca:wght@100..900&display=swap');
+// unidad base
+
+body{
+    font-family: "Fustat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $dark-blue;
+    padding: 0;
+    margin: 0;
+}
+header{
+    margin: 0;
+}
+// 
+.icon_img{
+    font-size: 17px;
+    font-weight: 600;
+    & img{
+        width: 50px;
+        height: 50px;
+    }
+}
+// hover
+.hover-effect {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    box-shadow: 0 1px 70px #8df186a9;
+    transform: scale(1.01); /* Aumenta ligeramente el tamaño cuando se hace hover */
+}

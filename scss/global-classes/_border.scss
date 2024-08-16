@@ -1,0 +1,21 @@
+@use 'globalVariables.scss' as *; 
+
+.br-1 {
+    border-radius: $rem*1;
+  }
+  
+  .br-2 {
+    border-radius: $rem*2;
+  }
+  
+  .br-3 {
+    border-radius: $rem*3;
+  }
+  
+  .br-4 {
+    border-radius: $rem*4;
+  }
+  
+  .br-5 {
+    border-radius: $rem*5;
+  }
