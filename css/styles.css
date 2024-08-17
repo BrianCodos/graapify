@@ -98,6 +98,16 @@ li {
   border-radius: 50px;
 }
 
+a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hereda el color del elemento padre */
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina rellenos */
+  border: none; /* Elimina bordes */
+  background: none; /* Elimina fondo */
+  outline: none; /* Elimina contorno en enfoque */
+}
+
 .title {
   font-size: 1.2rem;
   font-weight: 600;
@@ -1360,6 +1370,19 @@ label {
 
 .left-full {
   left: 100%;
+}
+
+.projects .card {
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects .card img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease-out;
+}
+.projects .card:hover img {
+  transform: scale(1.2);
 }
 
 .logo img {

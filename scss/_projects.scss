@@ -1,0 +1,18 @@
+.projects{
+    .card {
+        overflow: hidden;
+        cursor: pointer;
+        
+        img{
+            width: 100%;
+            display: block;
+            transition: all .3s ease-out;
+        }
+
+        &:hover{
+            img{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
