@@ -34,6 +34,11 @@
   background-position: 20% 80%;
   background-size: 100% 100%;
 }
+.bg-2{
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, $light-blue 0%, $dark-blue 100%);
+}
+
 // 
   /* Contenedor para el efecto de desenfoque */
 .bg-blur {

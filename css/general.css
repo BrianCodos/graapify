@@ -30,12 +30,6 @@ body {
   margin: 0;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 header {
   margin: 0;
 }
@@ -62,6 +56,46 @@ header {
 .nav_bar_flotante {
   width: 100%;
   position: absolute;
+}
+
+.video-home {
+  background-color: #8EF186;
+  height: 300px;
+}
+
+footer img {
+  max-width: 250px;
+}
+
+ul {
+  list-style: none; /* Elimina los puntos o números de la lista */
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina el relleno */
+}
+
+li {
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina el relleno */
+}
+
+.whatapp-fixed {
+  position: fixed;
+  width: 50px;
+  right: 50px;
+  bottom: 50px;
+  z-index: 10000;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.whatapp-fixed img {
+  width: 50px;
+  height: auto;
+  display: block;
+}
+.whatapp-fixed:hover {
+  width: 150px;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=general.css.map */

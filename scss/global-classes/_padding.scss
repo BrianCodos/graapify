@@ -1,6 +1,9 @@
 // padding
 @use 'globalVariables.scss' as *;
 /* All sides padding */
+.p-sm {
+  padding: calc($rem / 3);
+}
 .p-1 {
     padding: $rem;
   }

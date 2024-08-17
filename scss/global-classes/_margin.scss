@@ -1,5 +1,8 @@
 /* All sides margin */
 @use 'globalVariables.scss' as *;
+.m-sm {
+  margin: calc($rem / 2);
+}
 .m-1 {
     margin: $rem;
   }

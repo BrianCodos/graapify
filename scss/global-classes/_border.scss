@@ -1,5 +1,9 @@
 @use 'globalVariables.scss' as *; 
+@use '../colors.scss' as *; 
 
+.br-sm {
+  border-radius: calc($rem/2);
+}
 .br-1 {
     border-radius: $rem*1;
   }
@@ -19,3 +23,17 @@
   .br-5 {
     border-radius: $rem*5;
   }
+
+  // 
+
+  /* Border Right */
+.b-right-primary { border-right: 1px $primary solid; }
+
+/* Border Left */
+.b-left-primary { border-left: 1px $primary solid; }
+
+/* Border Top */
+.b-top-primary { border-top: 1px $primary solid; }
+
+/* Border Bottom */
+.b-bottom-primary { border-bottom: 1px $primary solid; }
