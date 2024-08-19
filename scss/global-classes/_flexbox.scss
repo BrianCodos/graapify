@@ -75,3 +75,17 @@
     flex: none;
   }
   
+  .full-width {
+    width: 100%;
+}
+
+/* Control de la envoltura flex */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}

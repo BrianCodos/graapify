@@ -881,6 +881,10 @@ h3 {
   background: linear-gradient(0deg, #477BA4 0%, #1D303F 100%);
 }
 
+.bg-3 {
+  background-image: linear-gradient(200deg, hsl(206, 37%, 18%) 0%, hsl(197, 73%, 20%) 16%, hsl(193, 100%, 21%) 30%, hsl(189, 100%, 25%) 42%, hsl(184, 100%, 27%) 53%, hsl(178, 100%, 29%) 63%, hsl(170, 100%, 33%) 73%, hsl(162, 100%, 37%) 82%, hsl(148, 67%, 49%) 91%, hsl(115, 70%, 65%) 100%);
+}
+
 /* Contenedor para el efecto de desenfoque */
 .bg-blur {
   position: relative;
@@ -1034,6 +1038,23 @@ h3 {
 
 .flex-none {
   flex: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Control de la envoltura flex */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 /* Grid container */
