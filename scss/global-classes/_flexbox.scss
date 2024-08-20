@@ -75,9 +75,7 @@
     flex: none;
   }
   
-  .full-width {
-    width: 100%;
-}
+
 
 /* Control de la envoltura flex */
 .flex-wrap {
@@ -88,4 +86,9 @@
 }
 .flex-nowrap {
   flex-wrap: nowrap;
+}
+
+// anchos
+.full-width {
+  width: 100%;
 }

@@ -1,3 +1,4 @@
+@use 'colors.scss' as *; 
 .nav_bar_flotante{
     position: fixed;
     top: -100px; /* Inicialmente oculta fuera de la vista */
@@ -8,10 +9,24 @@
     position: fixed;
     z-index: 1000;
 
-    img{
-        max-width: 200px;
-    }
+   
     button{
         max-width: 300px !important;
     }
+}
+nav{
+    img{
+        max-width: 170px;
+    }
+}
+.nav_bar_items{
+    
+        transition: all .2s ease-in;
+
+        
+        &:hover{
+            color: $white;
+            transform: translateY(-1px);
+        }
+
 }

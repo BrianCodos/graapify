@@ -8,44 +8,36 @@
     <title>Grappify</title>
 </head>
 <body class="bg-stars">
-    <!-- Nav bar flotante -->
-    <div class="nav_bar_flotante bg-dark-blue shadow-green-sm hover-effect flex ">
-        <div class="container flex py-1 justify-between">
+    <!-- Nav bar -->
+    
+    <nav class="bg-blur shadow-green-sm fixed flex full-width top-0" style="z-index: 10000;">
+        <div class="container bg-blur-content flex py-1 justify-between items-center">
             <a href="/">
-                <img src="statics/img/LogoWhite.png" alt="">
+                <img src="statics/img/LogoWhite.png" alt="Logo" class="">
             </a>
-            <div class="">
+            <ul class="flex space-x-4 primary mr-auto">
+                <li class="nav_bar_items px-1">  <a href="#">Nosotros</a></li>
+                <li class="nav_bar_items px-1">  <a href="#">Nuestro trabajo</a></li>
+                <li class="nav_bar_items px-1">  <a href="servicios.html">Servicios</a></li>
+                <li class="nav_bar_items px-1">  <a href="#">Planes</a></li>
+            </ul>
+            <div>
                 <button class="btn-primary shadow-2xl" type="submit">Programar Llamada</button>
             </div>
-         </div>
-    </div>
-    <header class="bg-3 py-3">
-        <div class="container">
-            <!-- navbar -->
-            <div class="nav_bar flex justify-between pb-3">
-                <div class="logo_">
-                    <a href="/">
-                        <img src="statics/img/LogoWhite.png" alt="">
-                    </a>
-                </div>
-                <div class="">
-                    <button class="btn-primary shadow-2xl" type="submit">Programar Llamada</button>
-                </div>
-            </div>
-            <!-- project Info -->
-             <div class="grid grid-cols-3 gap-4">
-                <div class="col-span-2 pr-3 b-right-primary">
-                    <h2 class="dark white">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="primary">Sed, sequi cumque? Eaque architecto </span>repellendus facilis in possimus hic non sunt!</h2>
-                </div>
-                <div class="pl-3">
-                    data
-                </div>
-             </div>
         </div>
-    </header>
+    </nav>
+    <!-- fin navbar -->
+    <!-- Section Header -->
+    <div class="bg-3 pt-5 pb-4 mt-3 relative">
+        <div class="container pl-5">
+            <h2 class="dark white text-right pl-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="primary">Sed, sequi cumque? Eaque architecto </span>repellendus facilis in possimus hnt!</h2>
+            <div class="white text-right mt-1 pl-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum quam minima vel temporibus neces</div>
+        </div>
+    </div>
+    <!-- Fin Section Header -->
     <!-- Services List -->
     <div class="container grid grid-cols-4 gap-4 py-5 primary">
-        <h2 class="col-span-4 pb-3">NUestros Servicios</h2>
+        <h2 class="col-span-4 pb-3">Nuestros Servicios</h2>
         <div class="card-services br-1 p-1 flex flex-col bg-dark-blue shadow-green-sm hover-effect">
             <div class="flex items-center">
                 <img src="statics/img/Icon.png" style="max-width: 50px;" alt="">
@@ -134,6 +126,51 @@
             <button class="btn-primary shadow-2xl" type="submit">Programar Llamada</button>
         </div>
     </div>
+       <!-- grid visuales projects -->
+       <section class="projects grid grid-cols-6 white">
+        
+        <h2 class="container col-span-6 pb-4">
+            Lorem ipsum dolor sit amet consectetur.
+        </h2>
+    
+        <div class="card">
+            <img src="https://picsum.photos/id/237/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/234/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/232/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/237/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/234/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/232/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/225/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/217/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/221/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/220/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/218/300/300" alt="">
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/225/300/300" alt="">
+        </div>
+
+    </section>
     <!-- form -->
     <section class="bg-gradient-primary py-5">
         <div class="container grid grid-cols-2">
@@ -172,52 +209,23 @@
         </div>
     </section>
     <!-- endForm -->
-     <!-- End Services List -->
-        <!-- grid visuales projects -->
-        <section class="projects grid grid-cols-6 white">
-            
-            <h2 class="container col-span-6 pb-4">
-                Lorem ipsum dolor sit amet consectetur.
-            </h2>
-        
-            <div class="card">
-                <img src="https://picsum.photos/id/237/300/300" alt="">
+    <!-- Section Video -->
+    <section class="bg-2 py-2 pt-5">
+        <div class="container grid grid-cols-2 py-3">
+            <div class="flex flex-col">
+                <h1 class="pr-5 primary">Lorem ipsum dolor sit amet consectetur.</h1>
+                <div class="video-home br-1 my-3 flex justify-center items-center bg-gradient-primary">😎</div>
+                <div class="title white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eius at, iure corporis sed enim suscipit rem qui soluta delectus.
+                </div>
             </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/234/300/300" alt="">
+            <div class="p-1">
+                <img src="statics/img/Guy_Selecting.png" alt="">
             </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/232/300/300" alt="">
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/237/300/300" alt="">
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/234/300/300" alt="">
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/232/300/300" alt="">
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/225/300/300" alt="">
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/217/300/300" alt="">
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/221/300/300" alt="">
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/220/300/300" alt="">
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/218/300/300" alt="">
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/225/300/300" alt="">
-            </div>
-    
-        </section>
+        </div>
+     </section>
+     <!-- fin section video -->
+ 
      <!-- footer -->
     <footer class="py-3 bg-dark-blue">
         

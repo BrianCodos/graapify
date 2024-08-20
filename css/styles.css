@@ -900,8 +900,8 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(29, 48, 63, 0.555); /* Color blanco con 30% de opacidad */
-  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  background-color: rgba(29, 48, 63, 0.5); /* Color blanco con 30% de opacidad */
+  backdrop-filter: blur(50px); /* Efecto de desenfoque */
   z-index: 0; /* Asegura que el efecto de desenfoque esté detrás del contenido */
 }
 
@@ -1040,10 +1040,6 @@ h3 {
   flex: none;
 }
 
-.full-width {
-  width: 100%;
-}
-
 /* Control de la envoltura flex */
 .flex-wrap {
   flex-wrap: wrap;
@@ -1055,6 +1051,10 @@ h3 {
 
 .flex-nowrap {
   flex-wrap: nowrap;
+}
+
+.full-width {
+  width: 100%;
 }
 
 /* Grid container */
@@ -1313,11 +1313,20 @@ label {
   position: fixed;
   z-index: 1000;
 }
-.nav_bar_flotante img {
-  max-width: 200px;
-}
 .nav_bar_flotante button {
   max-width: 300px !important;
+}
+
+nav img {
+  max-width: 170px;
+}
+
+.nav_bar_items {
+  transition: all 0.2s ease-in;
+}
+.nav_bar_items:hover {
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 /* Posiciones de los elementos */
@@ -1360,6 +1369,10 @@ label {
 }
 
 /* Ejemplos adicionales para ajustar la ubicación */
+.top-0 {
+  top: 0; /* 4px */
+}
+
 .top-1 {
   top: 0.25rem; /* 4px */
 }

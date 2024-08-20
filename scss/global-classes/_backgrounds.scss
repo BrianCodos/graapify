@@ -70,8 +70,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba($dark-blue, 0.555); /* Color blanco con 30% de opacidad */
-  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  background-color: rgba($dark-blue, .5); /* Color blanco con 30% de opacidad */
+  backdrop-filter: blur(50px); /* Efecto de desenfoque */
   z-index: 0; /* Asegura que el efecto de desenfoque esté detrás del contenido */
 }
 .bg-blur-content {
