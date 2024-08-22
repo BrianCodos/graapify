@@ -1,0 +1,25 @@
+@use '../colors.scss' as *; 
+.cursor-link {
+    position: relative;
+    cursor: none; /* Oculta el cursor cuando está sobre la tarjeta */
+}
+
+.tooltip {
+    cursor: none;
+    position: absolute;
+    background-color: $primary;
+    color: $dark-blue;
+    padding: 10px 20px; 
+    font-weight: 900;
+    border-radius: 25px;        /* Hace que el tooltip sea un círculo */
+    font-size: 20px;           /* Aumenta el tamaño del símbolo '+' */
+    display: none;             /* Asegura que sea invisible inicialmente */
+    pointer-events: none;
+    display: flex;             /* Activa Flexbox en el tooltip */
+    justify-content: center;   /* Centra horizontalmente */
+    align-items: center;       /* Centra verticalmente */
+    transform: translate(-50%, -50%); /* Centra el tooltip */
+    z-index: 1000;             /* Para asegurar que esté sobre otros elementos */
+    left: -9999px;             /* Inicialmente, lo mueve fuera de la pantalla */
+    top: -9999px;              /* Inicialmente, lo mueve fuera de la pantalla */
+}

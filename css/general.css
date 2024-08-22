@@ -115,4 +115,8 @@ a {
   outline: none; /* Elimina contorno en enfoque */
 }
 
+.cursor-none {
+  cursor: none;
+}
+
 /*# sourceMappingURL=general.css.map */

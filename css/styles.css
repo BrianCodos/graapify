@@ -115,6 +115,10 @@ a {
   outline: none; /* Elimina contorno en enfoque */
 }
 
+.cursor-none {
+  cursor: none;
+}
+
 .title {
   font-size: 1.2rem;
   font-weight: 600;
@@ -137,7 +141,14 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 5rem;
   line-height: 1.7rem;
   margin: 0;
   padding: 0;
@@ -908,7 +919,7 @@ h3 {
   width: 100%;
   height: 100%;
   background-color: rgba(29, 48, 63, 0.5); /* Color blanco con 30% de opacidad */
-  backdrop-filter: blur(50px); /* Efecto de desenfoque */
+  backdrop-filter: blur(20px); /* Efecto de desenfoque */
   z-index: 0; /* Asegura que el efecto de desenfoque esté detrás del contenido */
 }
 
@@ -1448,6 +1459,31 @@ nav img {
 }
 .projects .card:hover img {
   transform: scale(1.2);
+}
+
+.cursor-link {
+  position: relative;
+  cursor: none; /* Oculta el cursor cuando está sobre la tarjeta */
+}
+
+.tooltip {
+  cursor: none;
+  position: absolute;
+  background-color: #8EF186;
+  color: #1D303F;
+  padding: 10px 20px;
+  font-weight: 900;
+  border-radius: 25px; /* Hace que el tooltip sea un círculo */
+  font-size: 20px; /* Aumenta el tamaño del símbolo '+' */
+  display: none; /* Asegura que sea invisible inicialmente */
+  pointer-events: none;
+  display: flex; /* Activa Flexbox en el tooltip */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  transform: translate(-50%, -50%); /* Centra el tooltip */
+  z-index: 1000; /* Para asegurar que esté sobre otros elementos */
+  left: -9999px; /* Inicialmente, lo mueve fuera de la pantalla */
+  top: -9999px; /* Inicialmente, lo mueve fuera de la pantalla */
 }
 
 .logo img {

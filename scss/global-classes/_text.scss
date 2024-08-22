@@ -22,11 +22,17 @@ h2{
     padding: 0;
 }
 h3{
-    font-size: $rem*1;
+    font-size: $rem*1.5;
     line-height: $rem*1.7;
     margin: 0;
     padding: 0;
 
+}
+h4{
+    font-size: $rem*5;
+    line-height: $rem*1.7;
+    margin: 0;
+    padding: 0;
 }
 .disclaimer{
     font-size: $rem*.9;

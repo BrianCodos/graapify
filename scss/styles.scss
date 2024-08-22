@@ -17,6 +17,7 @@
 @use 'nav_bar_Flotante.scss' as *; 
 @use 'global-classes/position.scss' as *; 
 @use 'projects.scss' as *; 
+@use 'global-classes/cursorEfect.scss' as *; 
 
 .logo img{
     max-width: 250px;
