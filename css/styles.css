@@ -85,6 +85,11 @@ li {
   padding: 0; /* Elimina el relleno */
 }
 
+p {
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina el relleno */
+}
+
 .whatapp-fixed {
   position: fixed;
   width: 50px;
@@ -148,7 +153,7 @@ h3 {
 }
 
 h4 {
-  font-size: 5rem;
+  font-size: 1rem;
   line-height: 1.7rem;
   margin: 0;
   padding: 0;
@@ -1423,6 +1428,10 @@ nav img {
   right: 0.25rem; /* 4px */
 }
 
+.bottom-0 {
+  bottom: 0;
+}
+
 .bottom-1 {
   bottom: 0.25rem; /* 4px */
 }
@@ -1484,6 +1493,14 @@ nav img {
   z-index: 1000; /* Para asegurar que esté sobre otros elementos */
   left: -9999px; /* Inicialmente, lo mueve fuera de la pantalla */
   top: -9999px; /* Inicialmente, lo mueve fuera de la pantalla */
+  max-width: 200px;
+}
+
+.card-3d {
+  perspective: 1000px;
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
 .logo img {

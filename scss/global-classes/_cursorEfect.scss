@@ -22,4 +22,13 @@
     z-index: 1000;             /* Para asegurar que esté sobre otros elementos */
     left: -9999px;             /* Inicialmente, lo mueve fuera de la pantalla */
     top: -9999px;              /* Inicialmente, lo mueve fuera de la pantalla */
+    max-width: 200px;
+}
+
+
+.card-3d {
+    perspective: 1000px;
+    transition: transform 0.1s ease-out;
+    transform-style: preserve-3d;
+    will-change: transform;
 }

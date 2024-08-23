@@ -85,6 +85,11 @@ li {
   padding: 0; /* Elimina el relleno */
 }
 
+p {
+  margin: 0; /* Elimina el margen */
+  padding: 0; /* Elimina el relleno */
+}
+
 .whatapp-fixed {
   position: fixed;
   width: 50px;
