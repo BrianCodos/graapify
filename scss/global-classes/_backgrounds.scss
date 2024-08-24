@@ -87,3 +87,13 @@
             background-attachment: fixed; /* Hace que la imagen se quede fija al hacer scroll */
 
 }
+
+.bg-gradient-image{
+
+    background-image: url('../../statics/img/Fondo.png'); /* Reemplaza con la ruta de tu imagen */
+
+    /* Ajuste del fondo */
+    background-position: top center; /* Centrado arriba */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+
+}
