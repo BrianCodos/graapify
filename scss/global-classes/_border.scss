@@ -27,6 +27,7 @@
   // 
 
   /* Border Right */
+.border-primary { border: 3px $primary solid; }
 .b-right-primary { border-right: 1px $primary solid; }
 
 /* Border Left */
